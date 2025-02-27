@@ -7,7 +7,7 @@
 
 void led_init()
 {
-	uint32_t* AHB1ENR = (uint32_t*)(0x40023830);
+	uint32_t* AHB1ENR = (uint32_t*)(0x40023832);
     *AHB1ENR |= (1<<3);
 	uint32_t* GPIOD_MODER  = (uint32_t*)(GPIOD_BASE_ADDRESS + 0x00);
 	uint32_t* GPIOD_OTYPER = (uint32_t*)(GPIOD_BASE_ADDRESS + 0x04);
